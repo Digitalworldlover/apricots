@@ -1,0 +1,249 @@
+
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/*global */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    }
+
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+/* Header */
+#logo{
+    width: 60px;
+    display: flex;
+    position:fixed;
+}
+
+header {
+    background: #35424a;
+    color:#ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #FC8C1F 3px solid;
+}
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+header #branding h1 {
+
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;   
+}
+
+header .highlight, header .current a {
+    color: #FC8C1F;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+.button_1 {
+    height: 38px;
+    background: #FC8C1F;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+/* Showcase */
+#showcase {
+    min-height: 350px;
+    background: url('../img/f1.jpg') no-repeat -00px -0px;
+    z-index: 2;
+    text-align: center;
+    background-size: cover;
+    color: #ffffff;
+
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+}
+/* about*/
+#showcase2 {
+    min-height: 200px;
+    background: url('../img/b.jpg') no-repeat 10px -80px;
+    text-align: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#showcase3 {
+    background: url('../img/apr.png') 0px -100px;
+    min-height: 200px;
+    text-align: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.overlay {
+    min-height: 200px;
+    background: rgba(0,0,0,.2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#showcase3 h1 {
+    margin-top: 50px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase2 h1 {
+    margin-top: 50px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+/* newsletter */
+#newsletter {
+    padding: 20px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+ #newsletter h1{
+ }
+
+ #newsletter form{
+     float: right;
+     margin-top: 10px;
+
+ }
+
+ #newsletter input[type ="email"]{
+     padding: 4px;
+     height: 25px;
+     width: 250px;
+ }
+
+ /* Boxes */
+ #boxes{
+margin-top: 15px;
+ }
+
+ #boxes .box{
+    padding: 10px;
+    min-height: 100px;
+ }
+
+ #boxes .box img{
+     width: 300px;
+ }
+
+ 
+ /*Sidebar */
+ aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+ }
+
+aside#sidebar .qoute input, aside#sidebar .qoute textarea{
+    width: 90%;
+    padding: 5px;
+}
+ /* article*/
+ article#main-col{
+     float: left;
+     width: 65%;
+ }
+
+ /* Services*/
+ ul#services li{
+     list-style: none;
+     padding:20px ;
+     border: #cccccc solid 1px;
+     border-radius: 9px;
+     margin-bottom: 5px;
+     background: #e6e6e6;
+ }
+
+ footer{
+     padding: 20px;
+     margin-top: 20px;
+     color: #ffffff;
+     background-color: #e8491d;
+     text-align: center;
+ }
+
+ /* Media Queries */
+ @media(max-width: 768px){
+     header #branding,
+     header nav,
+     header li, 
+     #newsletter h1,
+     #newsletter form,
+     #boxes .box,
+     article#main-col,
+     aside#sidebar{
+         float: none;
+         text-align: center;
+         width: 100%;
+     }
+
+     header{
+         padding-bottom: 20px;
+     }
+     #showcase h1{
+         margin-top: 40px;
+     }
+
+     #newsletter button, .qoute button {
+         display: block;
+         width: 100%;
+     }
+     #newsletter form input[type="email"], .qoute input, .qoute textarea{
+         width: 100%;
+         margin-bottom: 5px;
+
+     }
+}
